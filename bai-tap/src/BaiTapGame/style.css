@@ -1,0 +1,93 @@
+.playGame {
+    background-image: url("../BaiTapGame/asset/bgGame.png");
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: bottom;
+    position: fixed;
+    font-family: fontGame;
+}
+
+.playerGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    border: 5px solid #45d994;
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.showIconItem {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 15px;
+    animation-name: randomItem;
+    animation-duration: 0.5s;
+    transform: rotate(120deg);
+}
+
+@keyframes randomItem {
+    0% {
+        top: -50px;
+    }
+    25% {
+        top: 100px;
+    }
+    50% {
+        top: -50px;
+    }
+    75% {
+        top: 100px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.iconComputer {
+    width: 200px;
+    height: 200px;
+}
+
+.btnItem {
+    width: 75px;
+    height: 75px;
+}
+
+.btnItem:focus {
+    outline: 0;
+}
+
+.btnItem.active {
+    border: 3px solid orange;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #45d994;
+    border-radius: 0.4em;
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-top-color: #45d994;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -17.5px;
+    margin-bottom: -35px;
+}
