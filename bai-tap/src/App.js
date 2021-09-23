@@ -1,9 +1,11 @@
+import BaiTapBookingMovie from './BaiTapBookingMovie';
 import BaiTapGame from './BaiTapGame';
 
 function App() {
   return (
     <div>
-      <BaiTapGame />
+      {/* <BaiTapGame /> */}
+      <BaiTapBookingMovie />
     </div>
   );
 }
